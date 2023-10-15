@@ -9645,3 +9645,129 @@ h4, h5, h6 {
   padding: 0;
   list-style-type: none;
 }
+#products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.cuntainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+
+.cuntainer .cord {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  max-width: 100%;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.cuntainer .cord:hover {
+  height: 400px;
+  cursor: pointer;
+}
+
+.cuntainer .cord .img-box {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.cuntainer .cord:hover .img-box {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.cuntainer .cord .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cuntainer .cord .content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  height: 35px;
+  padding: 0 30px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.cuntainer .cord:hover .content {
+  top: 130px;
+  height: 250px;
+}
+
+.cuntainer .cord .content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr);
+}
+
+.cuntainer .cord .content p {
+  color: #333;
+}
+
+.cuntainer .cord .content a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background: var(--clr);
+  color: white;
+  font-weight: 500;
+}
+
+.cuntainer .cord .content a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .cuntainer .cord {
+      width: 230px;
+      border-radius: 15px;
+  }
+
+  .cuntainer .cord .img-box {
+      width: 185px;
+      border-radius: 10px;
+  }
+
+  .cuntainer .card .content p {
+      font-size: 0.8rem;
+  }
+
+  .cuntainer .card .content a {
+      font-size: 0.9rem;
+  }
+}
+#texto_pop { 
+  color: #000000; 
+}

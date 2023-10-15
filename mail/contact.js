@@ -59,7 +59,6 @@ $(function () {
         $(this).tab("show");
     });
 });
-
 $('#name').focus(function () {
     $('#success').html('');
 });
